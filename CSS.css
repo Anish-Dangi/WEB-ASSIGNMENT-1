@@ -1,5 +1,5 @@
 body{
-	background-color:#403f3f;
+	background:linear-gradient(135deg,#b5b5b5,#232222);
 	margin:0px;
 }
 .l{
@@ -18,8 +18,11 @@ body{
 	100%	{left:0px;}
 }
 nav{
+	position:sticky;
+	top:0;
+	padding:1px;
 	text-align:center;
-	margin-top:25px;
+	margin-top:20px;
 }
 a{
 	color:black;
@@ -31,4 +34,71 @@ a{
 .active,a:hover{
 	color:white;
 	border-bottom:3px solid;
+}
+.heading{
+	margin-top:15px;
+	border-top:4px solid black;
+	text-align:center;
+}
+.projects{
+	margin-top:15px;
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	box-sizing:border-box;
+	border:4px solid black;
+	height:50%;
+}
+.p{
+	width:24.5%;
+	margin:3px 5px;
+}
+.img{
+	position:relative;
+	height:100%;
+	width:100%;
+	animation-name:pro;
+	animation-duration:1s;
+	animation-timing-function:ease-out;
+}
+@keyframes pro{
+	0%	 {left:1500px;}
+	100%	{left:0px;}
+}
+.img:hover{
+	transform:scale(1.05);
+	box-shadow:2px 2px;
+}
+
+.placeholder{
+	margin-top:15px;
+	height:100%;
+	width:100%;
+	box-sizing:border-box;
+	border:4px solid black;
+}
+.place1{
+	display:flex;
+	flex-direction:column;
+	text-align:center;
+	float:left;
+	width:49%;
+	height:100%;
+	border-right:6px solid black; 
+}
+.place2{
+	display:flex;
+	flex-direction:column;
+	text-align:center;
+	float:left;
+	width:50%;
+	height:100%;
+}
+.placeimg{
+	margin:3px 0px;
+	height:44.5%;
+}
+footer{
+	border-bottom:4px solid black;
+}
 }
