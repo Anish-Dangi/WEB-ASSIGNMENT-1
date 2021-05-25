@@ -85,7 +85,6 @@ ul li a{
 /*css for portfolio page*/
 .heading{
 	margin-top:5px;
-	border-top:4px solid black;
 	text-align:center;
 	font-family:Arial;
 	color:#1f222d;
@@ -158,7 +157,6 @@ ul li a{
 	width:80%;
 }
 .port{
-	border-bottom:4px solid black;
 	font-family:Arial;
 }
 /*css for contact page */
