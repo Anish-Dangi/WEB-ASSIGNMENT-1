@@ -252,6 +252,12 @@ form input[type=reset]{
 	margin-bottom:5px;
 	cursor:pointer;
 }		
+form input[type=submit]:hover{
+	color:black;
+}
+form input[type=reset]:hover{
+	color:black;
+}
 .connect{
 	float:right;
 	text-align:center;
