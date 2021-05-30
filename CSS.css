@@ -65,6 +65,7 @@ ul li a{
 	margin:0px 15px;
 	height:100%;
 	width:50%;
+	background:linear-gradient(135deg,#85929a,#2c3e50);
 	box-sizing:border-box;
 	border:4px solid black;
 	box-shadow:7px 7px;
@@ -239,6 +240,12 @@ form input[type=submit]{
 	margin-bottom:5px;
 	cursor:pointer;
 }
+form input[type=submit]:hover{
+	color:black;
+}
+form input[type=reset]:hover{
+	color:black;
+}
 form input[type=reset]{
 	width:314px;
 	font-family:Arial;
@@ -252,14 +259,14 @@ form input[type=reset]{
 	float:right;
 	text-align:center;
 	margin:150px 20px 0px 0px;
-	background:black;
+	background:linear-gradient(135deg,#85929a,#2c3e50);
 	padding-top:40px;
 	height:400px;
 	width:35%;
 	font-family:Bahnschrift;
 	font-size:40px;
 	color:white;
-	box-shadow:5px 5px white;
+	box-shadow:5px 5px black;
 }
 .connect ul li{
 	display:block;
