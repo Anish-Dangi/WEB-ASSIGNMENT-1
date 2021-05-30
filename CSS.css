@@ -300,7 +300,6 @@ table .top{
 	height:958px;
 	width:600px;
 	background-color:#beb6ec;
-
 }
 table .middle{
 	font-family:Bahnschrift;
@@ -317,6 +316,7 @@ table .history{
 	width:400px;
 	height:958px;
 	background-color:#4b878bff;
+
 }
 table .left-top{
 	height:214px;
@@ -342,7 +342,8 @@ table .bottom{
 	font-family:Bahnschrift;
 	font-size:25px;
 	background-color:#3a6275e8;
-}	
+}  
 table, tr, th, td{
 	border:1px solid black;
 }
+
