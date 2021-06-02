@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CONTACT</title>
 <link href="CSS.css" rel="stylesheet" type="text/css">
 </head>
@@ -10,7 +11,9 @@
 <!--https://hu.pinterest.com/pin/135600638755674479/!-->
 </div>
 <nav>
-<ul>
+<label for="icon"><img class="ham" src="hamburger.png" alt="hamburger"></label>
+<input type="checkbox" id="icon"/>
+<ul class="menu">
 <li><a href="Index.html">INDEX</a></li>
 <li><a href="Portfolio.html">PORTFOLIO</a></li>
 <li><a href="Contact.html" class="active">CONTACT</a></li>
@@ -18,34 +21,24 @@
 <li><a href="Site-report.html">SITE-REPORT</a></li>
 </ul>
 </nav>
-<div class="git"><b>GET IN TOUCH</b></div>
-<div class="connect"><b>CONNECT WITH ME</b>
-<ul>
-<li><a href="https://www.facebook.com/anish.dangi.10" target="blank"><img class="media" src="facebook.png" alt="facebook-logo">Anish Dangi</a></li>
-<li><a href="https://www.instagram.com/anishdangi_/" target="_blank"><img class="media" src="instagram.png" alt="instagram-logo">@anishdangi_</a></li>
-<li><a href="https://twitter.com/AnishDangi8" target="_blank"><img class="media" src="twitter.png" alt="twitter-logo">Anish_Dangi</a></li>
-<li><img class="media" src="gmail.png" alt="gmail-logo">anishdangi999@gmail.com</li>
-<li><img class="media" src="viber.jpg" alt="viber-logo">+977-9823863708</li>
-<li><img class="media" src="whatsapp.png" alt="whatsapp-logo">+977-9862590756</li>
-<li><img class="media" src="home.png" alt="home-logo">+977-01-5908951</li>
-</ul>
-</div>
+<div class="con">
+<div class="git"><b>GET IN TOUCH</b>
 <form action="/action_page.php" method="post">
 <fieldset>
 <legend><b>PERSONAL-INFORMATION</b></legend><br>
-FIRST NAME:
+<b>FIRST NAME:</b>
 <input type="text" name="First-Name" placeholder="Enter First-Name"><br><br>
-LAST NAME:
+<b>LAST NAME:</b>
 <input type="text" name="Last-Name" placeholder="Enter Last -Name"><br><br>
-GENDER:
-<input type="radio" name="Gender" value="Male">Male
-<input type="radio" name="Gender" value="Female">Female
-<input type="radio" name="Gender" value="Other">Other<br><br>
-D.O.B: 
+<b>GENDER:</b>
+<input type="radio" name="Gender" value="Male"><b>Male</b>
+<input type="radio" name="Gender" value="Female"><b>Female</b>
+<input type="radio" name="Gender" value="Other"><b>Other</b><br><br>
+<b>D.O.B:</b> 
 <input type="date" name="DOB" max="2021-12-31"><br><br>
-EMAIL: 
+<b>EMAIL:</b> 
 <input type="text" name="Email" placeholder="Enter Email Address"><br><br>
-PHONE NO:
+<b>PHONE NO:</b>
 <select name="phone-code">
 <option value="+977">NEP(+977)</option>
 <option value="+44">ENG(+44)</option>
@@ -57,19 +50,39 @@ PHONE NO:
 <option value="+7">RUS(+7)</option>
 <option value="+81">JPN(+81)</option>
 </select>
--&nbsp;<input type="text" name="Phone.no" placeholder="Enter Phone Number"><br><br>
+-&nbsp;<input class="ph" type="text" name="Phone.no" placeholder="Enter Phone Number"><br><br>
 </fieldset>
 <fieldset>
 <legend><b>OTHER-INFORMATION</b></legend><br>
-VISIT PURPOSE:
-<input type="checkbox" name="purpose" value="a">Random Visit
-<input type="checkbox" name="purpose" value="b">To Hire
-<input type="checkbox" name="purpose" value="c">To Connect<br><br>
-MESSAGE/SUGGESTION/COMMENT/QUESTIONS:
-<textarea name="text" rows="10" cols="57" placeholder="Enter Text...."></textarea>
+<b>VISIT PURPOSE:</b>
+<input type="checkbox" name="purpose" value="a"><b>Random Visit</b>
+<input type="checkbox" name="purpose" value="b"><b>To Hire</b>
+<input type="checkbox" name="purpose" value="c"><b>To Connect</b><br><br>
+<b>MESSAGE/SUGGESTION/QUESTIONS:</b>
+<textarea name="text" placeholder="Enter Text...."></textarea>
 </fieldset><br>
 <input type="submit" value="SUBMIT">
 <input type="reset" value="RESET">
 </form>
+</div>
+<div class="connect"><b>CONNECT WITH ME</b>
+<ul>
+<li><a href="https://www.facebook.com/anish.dangi.10" target="blank"><img class="media" src="facebook.png" alt="facebook-logo">Anish Dangi</a></li>
+<!--http://www.giantsaresmall.com/kids2/facebooklogopngtransparentbackground/-->
+<li><a href="https://www.instagram.com/anishdangi_/" target="_blank"><img class="media" src="instagram.png" alt="instagram-logo">@anishdangi_</a></li>
+<!--https://www.smallbizdaily.com/what-small-businesses-need-to-know-about-instagram-stories/-->
+<li><a href="https://twitter.com/AnishDangi8" target="_blank"><img class="media" src="twitter.png" alt="twitter-logo">Anish_Dangi</a></li>
+<!--https://www.pinterest.com/saqibsomal/twitter-logo/-->
+<li><img class="media" src="gmail.png" alt="gmail-logo">anishdangi999@gmail.com</li>
+<!--https://www.business2community.com/marketing/3-small-gmail-tools-with-big-impact-for-pr-marketing-pros-01268368-->
+<li><img class="media" src="viber.jpg" alt="viber-logo">+977-9823863708</li>
+<!--https://www.cleanpng.com/png-viber-ipa-app-store-viber-2175823/-->
+<li><img class="media" src="whatsapp.png" alt="whatsapp-logo">+977-9862590756</li>
+<!--https://in.pinterest.com/pin/598556606727844836/-->
+<li><img class="media" src="home.png" alt="home-logo">+977-01-5908951</li>
+<!--https://www.pngitem.com/middle/ibTxibm_clipart-home-home-address-small-blue-house-logo/-->
+</ul>
+</div>
+</div>
 </body>
 </html>
