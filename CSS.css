@@ -1,9 +1,12 @@
+/*css for nav bar*/
 body{
 	background:linear-gradient(135deg,#b5b5b5,#232222);
 	margin:0px;
 	overflow-x:hidden;
 }
 .l{
+	border-bottom:3px solid black;
+	border-top:3px solid black;
 	background-color:white;
 	padding:5px;
 	text-align:center;
@@ -43,6 +46,13 @@ ul li a{
 	color:white;
 	border-bottom:3px solid;
 }
+.btn{
+	display:none;
+}
+.X{
+	display:none;
+}
+
 /*css for index page*/
 .ind{
 	display:grid;
@@ -51,12 +61,11 @@ ul li a{
 }
 .name{
 	position:relative;
-	padding:50px 160px;
+	padding:60px 160px;
 	width:100%;
 	box-sizing:border-box;
 	font-family:Impact;
 	font-size:150px;
-	transition:translate(-50%,-50%);
 	background: -webkit-linear-gradient(135deg,#3e3d3d,#0d2a35,#3a3a3a,#3e3b3b);
 	-webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
@@ -95,19 +104,19 @@ ul li a{
 	text-align:left;
 	margin-left:5px;
 }
-	
 
 /*css for portfolio page*/
 .heading{
-	margin-top:5px;
+	margin-top:20px;
 	text-align:center;
 	font-family:Arial;
+	font-size:30px;
 	color:#1f222d;
 }
 .projects{
 	margin-top:15px;
 	width:100%;
-	height:325px;
+	height:250px;
 	display:grid;
 	grid-template-columns:24.3% 24.3% 24.3% 24.3%;
 	grid-column-gap:9px;
@@ -137,17 +146,19 @@ ul li a{
 }
 .para{
 	font-family:Arial;
+	font-size:25px;
 	text-align:center;
 	color:#1f222d;
 }
-
 .placeholder{
 	margin-top:15px;
 	display:grid;
 	grid-template-columns:50% 50%;
 	width:100%;
+	height:905px;
 	box-sizing:border-box;
 	border:4px solid black;
+	margin-bottom:10px;
 	
 }
 .place1{
@@ -155,16 +166,16 @@ ul li a{
 	grid-template-rows:50% 50%;
 	align-content:center;
 	width:99.5%;
-	height:100%;
-	border-right:3px solid black;
+	height:80%;
+	border-right:2px solid black;
 }
 .place2{
 	display:grid;
 	grid-template-rows:50% 50%;
 	align-content:center;
 	width:99.5%;
-	height:100%;
-	border-right:3px solid black;
+	height:80%;
+	border-left:2px solid black;
 
 }
 .placeimg{
@@ -176,17 +187,20 @@ footer{
 	clear:both;
 	position:relative;
 	font-family:Arial;
+	font-size:25px;
 	color:white;
 	text-align:center;
 	animation-name:foot;
 	animation-duration:10s;
 	animation-iteration-count:infinite;
+	margin-bottom:10px;
 }
 @keyframes foot{
 	0%	{left:-1500px;}
 	50%	{left:0px;}
 	100%	{left:1500px;}
 }
+
 /*css for contact page */
 .con{
 	width:100%;
@@ -196,7 +210,7 @@ footer{
 .git{
 	width:100%;
 	margin:20px;
-	padding-left:50px;
+	padding-left:30px;
 	text-align:center;
 	align-content:center;
 	font-family:Bahnschrift;
@@ -205,18 +219,18 @@ footer{
 }
 form{
 	margin-top:20px;
-	padding-left:50px;
+	padding-left:30px;
 	font-family:Arial;
-	font-size:20px;
+	font-size:23px;
 	color:#1f222d;
 	text-align:left;
 }
 form fieldset{
-	width:600px;
+	width:620px;
 }
 form fieldset legend{
 	font-family:Arial;
-	font-size:28px;
+	font-size:30px;
 	color:black;
 }
 form input{
@@ -224,25 +238,25 @@ form input{
 }
 form input[type=text]{
 	font-family:Arial;
-	font-size:20px;
+	font-size:23px;
 	width:300px;
 }
 form input[type=date]{
 	font-family:Arial;
-	font-size:20px;
+	font-size:23px;
 }
 form select{
 	font-family:Arial;
-	font-size:20px;
+	font-size:23px;
 	border:2px solid black;
 	color:#1f222d;
 }	
 form textarea{
 	font-family:Arial;
-	font-size:20px;
+	font-size:23px;
 	border:2px solid black;
 	height:200px;
-	width:600px;
+	width:590px;
 }
 form input[type=submit]{
 	width:314px;
@@ -290,6 +304,7 @@ form input[type=reset]:hover{
 .connect ul li a{
 	color:white;
 	margin:0px;
+	font-size:25px;
 }
 .connect ul li a:hover{
 	border-bottom:1px solid white;
@@ -299,10 +314,11 @@ form input[type=reset]:hover{
 	width:35px;
 	border-radius:10px;
 }
+
 /*css for cv page*/
 .cv{
 	width:1000px;
-	height:1133px;
+	height:1170px;
 	margin-top:40px;
 	padding-left:170px;
 }
@@ -367,9 +383,11 @@ table .bottom{
 table, tr, th, td{
 	border:1px solid black;
 }
+
 /* for responsive*/
+
+/*responsive for small mobile devices*/
 @media only screen and (max-width:425px){
-/* for index page*/
 .logo{
 	height:60px;
 	width:310px;
@@ -387,14 +405,38 @@ nav{
 	line-height:45px;
 	display:block;
 }
+
+.btn{
+	display:block;
+	position:relative;
+	top:-29px;
+	left:40px;
+	height:40px;
+	width:40px;
+	margin-left:100px;
+	border-radius:50px;
+	opacity:0;
+}
+.X{
+	display:block;
+	position:relative;
+	top:27px;
+	left:-20px;
+	height:40px;
+	width:40px;
+	margin-left:100px;
+	border-radius:50px;
+}
 .menu{
 	display:none;
+	margin-top:0px;
+	
 }
 ul li{
 	display:block;
 	list-style:none;
-	
-	
+	margin-left:20px;
+	margin-top:5px;	
 }
 ul li a{
 	padding:0px;
@@ -404,13 +446,13 @@ ul li a{
 	font-size:25px;
 	font-family:Bahnschrift SemiBold;
 	
-	
 }
 #icon:checked + ul{
 	display:block;
 	background:linear-gradient(-45deg,#2d3a46,#89b5bb);
 }
 /*https://www.youtube.com/watch?v=xMTs8tAapnQ*/
+/* for index page*/
 .ind{
 	display:flex;
 	flex-direction:column;
@@ -439,57 +481,61 @@ ul li a{
 	width:23%;
 	border:3px solid #3b4b52;
 }
-/*responsive for cv page*/
-.table{
-	display:flex;
-	justify-content:center;
-}
-.cv{
-	width:320px;
-	height:900px;
+/*responsive for portfolio page*/
+.heading{
 	margin-top:20px;
-	padding:0px;
-	align-items:center;
+	font-size:25px;
 }
-.up{
-	width:320px;
+.projects{
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
 }
-table .top{
-	width:320px;
-	height:60px;
-	font-size:30px;
+.p{
+	width:97%;
+	height:100%;
+	border-bottom:3px solid black;
 }
-.edu{
-	height:710px;
-	width:180px;
-}
-table .middle{
-	font-size:20px;
-}
-table .history{
-	font-size:12px;
-}
-.pi{
-	width:140px;
-	height:710px;
-}
-table .left-top{
-	height:180px;
-}
-table .cvpic{
-	width:80px;
-	height:110px;
-}
-table .pinfo{
-	font-size:20px;
-}
-table .details{
-	font-size:12px;
-}
-table .bottom{
-	height:50px;
+.para{
+	font-family:Arial;
 	font-size:18px;
-} 
+	text-align:center;
+	color:#1f222d;
+}
+
+.placeholder{
+	height:100%;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	margin-bottom:10px;
+}
+.place1{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:100%;
+	height:100%; 
+	margin-bottom:0px;
+	
+}
+.place2{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:100%;
+	height:100%;
+}
+.placeimg{
+	margin:3px 0px;
+	height:200px;
+	width:90%;
+	border-bottom:3px solid black;
+}
+footer{
+	font-size:20px;
+}
 /* responsive for contact page*/
 .con{
 	display:flex;
@@ -497,7 +543,7 @@ table .bottom{
 }
 .git{
 	width:100%;
-	margin:20px 0px;
+	margin:0px;
 	padding:0px;
 	font-size:40px;	
 }
@@ -545,6 +591,7 @@ form input[type=reset]{
 	font-size:35px;
 }
 .connect ul li{
+	margin-top:0px;
 	font-size:18px;	
 }
 .connect ul li a{
@@ -554,16 +601,119 @@ form input[type=reset]{
 	height:30px;
 	width:30px;
 }
+/*responsive for cv page*/
+.table{
+	display:flex;
+	justify-content:center;
+}
+.cv{
+	width:320px;
+	height:900px;
+	margin-top:10px;
+	padding:0px;
+	align-items:center;
+}
+.up{
+	width:320px;
+}
+table .top{
+	width:320px;
+	height:60px;
+	font-size:30px;
+}
+.edu{
+	height:710px;
+	width:180px;
+}
+table .middle{
+	font-size:20px;
+}
+table .history{
+	font-size:12px;
+}
+.pi{
+	width:140px;
+	height:710px;
+}
+table .left-top{
+	height:180px;
+}
+table .cvpic{
+	width:80px;
+	height:110px;
+}
+table .pinfo{
+	font-size:20px;
+}
+table .details{
+	font-size:12px;
+}
+table .bottom{
+	height:50px;
+	font-size:18px;
+} 
+}
+
+/*responsive for tablet devices*/
+@media only screen and (min-width:426px) and (max-width:768px){
+.logo{
+	height:80px;
+	width:420px;
+}	
+ul{
+	text-align:left;
+}
+ul li{
+	display:inline;
+}
+ul li a{
+	margin:12px 16px;
+	font-size:28px;
+}
+
+/* for index page*/
+.ind{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+}
+.name{
+	padding:0px;
+	text-align:center;
+	font-size:120px;
+	width:100%;
+}
+.info{
+	margin:15px 6px;
+	width:98%;
+	border:2px solid black;
+	box-shadow:3px 3px;
+	font-size:28px;
+}
+.welcome{
+	height:30px;
+	width:75%;
+	font-size:35px;	
+}
+.frame{
+	height:190px;
+	width:20%;
+	border:3px solid #3b4b52;
+}
 /*responsive for portfolio page*/
 .heading{
 	margin-top:20px;
 	font-size:28px;
 }
 .projects{
-	width:100%;
-	height:100%;
+	margin-left:80px;
+	width:80%;
+	height:30%;
 	display:flex;
 	flex-direction:column;
+}
+.para{
+	font-size:22px;
 }
 .p{
 	width:97%;
@@ -573,9 +723,11 @@ form input[type=reset]{
 
 .placeholder{
 	height:100%;
-	width:100%;
+	width:80%;
+	margin-left:80px;
 	display:flex;
 	flex-direction:column;
+	margin-bottom:10px;
 }
 .place1{
 	display:flex;
@@ -584,6 +736,7 @@ form input[type=reset]{
 	width:100%;
 	height:100%; 
 	margin-bottom:0px;
+	border:none;
 	
 }
 .place2{
@@ -591,14 +744,450 @@ form input[type=reset]{
 	flex-direction:column;
 	align-items:center;
 	width:100%;
-	height:100%;
+	height:100;
+	border:none;
 }
 .placeimg{
 	margin:3px 0px;
-	height:200px;
-	width:90%;
+	height:300px;
+	width:80%;
 	border-bottom:3px solid black;
 }
+footer{
+	font-size:22px;
+}
+/* responsive for contact page*/
+.con{
+	display:flex;
+	flex-direction:column;
+}
+.git{
+	width:100%;
+	margin:0px;
+	margin-top:20px;
+	padding:0px;
+	font-size:40px;	
+}
+form{
+	width:100%;
+	padding:0px;
+	font-size:22px;
+}
+form fieldset{
+	margin-left:15px;
+	width:700px;
+	margin-bottom:10px;
+}
+form fieldset legend{
+	font-size:28px;
+}
+form input[type=text]{
+	font-size:22px;
+	width:280px;
+}
+form input[type=date]{
+	font-size:22px;
+}
+form select{
+	font-size:22px;
+}	
+form textarea{
+	font-size:22px;
+	height:200px;
+	width:695px;
+}
+form input[type=submit]{
+	width:365px;
+	font-size:20px;
+	margin-left:15px;
+}
+form input[type=reset]{
+	width:365px;
+	font-size:20px;
+	margin-left:3px;
+}		
+.connect{
+	margin:5px 0px 0px 0px;
+	padding-top:20px;
+	padding-left:20px;
+	height:380px;
+	font-size:40px;
+	text-align:left;
+}
+.connect ul li{
+	margin-top:0px;
+	margin-left:20px;
+	font-size:28px;	
+}
+.connect ul li a{
+	font-size:28px;	
+}
+.media{
+	height:30px;
+	width:30px;
+}
+.table{
+	display:flex;
+	justify-content:center;
+}
+/*responsive for cv page*/
+.cv{
+	width:700px;
+	height:1200px;
+	margin-top:20px;
+	padding:0px;
+	align-items:center;
+}
+.up{
+	width:700px;
+}
+table .top{
+	height:90px;
+	font-size:40px;
+}
+.edu{
+	height:900px;
+	width:390px;
+}
+table .middle{
+	font-size:28px;
+}
+table .history{
+	font-size:20px;
+}
+.pi{
+	width:310px;
+	height:900px;
+}
+table .left-top{
+	height:217px;
+}
+table .cvpic{
+	width:130px;
+	height:170px;
+}
+table .pinfo{
+	font-size:28px;
+}
+table .details{
+	font-size:20px;
+}
+table .bottom{
+	height:50px;
+	font-size:30px;
+} 
 }
 
+/*responsive for laptops of screen 1024px*/
+@media only screen and (min-width:769px)and (max-width:1024px){
+/*responsive for 1024px laptop*/
+.logo{
+	height:80px;
+	width:420px;
+}
+ul li{
+	display:inline;
+}
+ul li a{
+	margin:12px 40px;
+}
+/*css for index page*/
+.ind{
+	display:grid;
+	grid-template-columns: 45% 50%;
+	width:100%;
+}
+.name{
+	padding:60px 80px;
+	font-size:130px;
+}
+.info{
+	margin:10px 25px;
+	box-shadow:6px 6px;
+	font-size:25px;
+}
+.frame{
+	height:135px;
+	width:100px;
+}
+.welcome{
+	width:396px;
+	font-size:35px;
+}
+/*css for portfolio page*/
+
+.projects{
+	height:225px;
+	grid-template-columns:24% 24% 24% 24%;
+}
+.p{
+	margin:3px 6px;
+}
+.placeholder{
+	height:750px;
+}
+/*css for contact page */
+.git{
+	margin:10px;
+	padding-left:0px;
+	font-size:35px;
+}
+form{
+	padding-left:0px;
+	font-size:18px;
+}
+form fieldset{
+	width:550px;
+}
+form fieldset legend{
+	font-size:26px;
+}
+
+form input[type=text]{
+	font-size:18px;
+	width:290px;
+}
+form input[type=date]{
+	font-size:18px;
+}
+form select{
+	font-size:18px;
+}	
+form textarea{
+	font-size:18px;
+	width:540px;
+}
+form input[type=submit]{
+	width:273px;
+	font-size:20px;
+}
+form input[type=reset]{
+	float:right;
+	width:280px;
+}		
+.connect{
+	height:430px;
+	font-size:35px;
+	box-shadow:6px 6px black;
+}
+.connect ul li{
+	display:block;
+	font-family:Bahnschrift;
+	font-size:23px;
+	text-align:left;	
+}
+.connect ul li a{
+	font-size:23px;
+}
+.media{
+	height:33px;
+	width:33px;
+}
+/*css for cv page*/
+.cv{
+	width:900px;
+	height:1050px;
+	padding-left:65px;
+}
+.up{
+	width:900px;
+}
+table .top{
+	height:70px;
+	font-size:38px;
+}
+.edu{
+	height:831px;
+	width:520px;
+}
+table .middle{
+	font-size:28px;
+}
+table .history{
+	font-size:20px;
+}
+.pi{
+	width:380px;
+	height:831px;
+
+}
+table .left-top{
+	height:205px;
+}
+table .cvpic{
+	width:130px;
+	height:180px;
+}
+table .pinfo{
+	font-size:28px;
+}
+table .details{
+	font-size:20px;
+}
+table .bottom{
+	height:60px;
+	font-size:23px;
+}  
+}
+
+/*responsive for laptops of screen 1440 */
+@media only screen and (min-width:1367px) and (max-width:1440px){	
+.logo{
+	width:500px;
+	height:100px;
+}
+ul li{
+	display:inline-block;
+	list-style:none;
+}
+ul li a{
+	margin:12px 60px;
+	font-size:35px;
+}
+
+/*responsive for index page*/
+.name{
+	padding:70px 160px;
+	font-size:160px;
+}
+.info{
+	font-size:32px;
+}
+.frame{
+	height:170px;
+}
+.welcome{
+	font-size:42px;
+}
+/*responsive for portfolio page*/
+.heading{
+	margin-top:30px;
+	font-size:35px;
+}
+.projects{
+	height:290px;
+}
+.para{
+	font-size:28px;
+}
+.placeholder{
+	height:1065px;
+	margin-bottom:20px;
+}
+.place1{
+	height:90%;
+}
+.place2{
+	height:90%;
+}
+footer{
+	font-size:28px;
+	margin-bottom:20px;
+}
+
+/*responsive for contact page */
+
+.git{
+	margin-top:30px;
+	padding-left:30px;
+	font-size:45px;
+	
+}
+form{
+	padding-left:30px;
+	font-size:27px;
+}
+form fieldset{
+	width:680px;
+}
+form fieldset legend{
+	font-size:33px;
+}
+
+form input[type=text]{
+	font-size:27px;
+	width:320px;
+}
+form input[type=date]{
+	font-size:27px;
+}
+form select{
+	font-size:27px;
+}	
+form textarea{
+	font-size:27px;
+
+	height:220px;
+	width:670px;
+}
+form input[type=submit]{
+	width:350px;
+	font-size:25px;
+	margin-left:10px;
+}
+form input[type=reset]{
+	width:350px;
+	font-size:25px;
+}		
+.connect{
+	margin:240px 100px 0px 80px;
+	height:460px;
+	font-size:45px;
+}
+.connect ul li{
+	font-size:30px;	
+}
+.connect ul li a{
+	font-size:30px;
+}
+.media{
+	height:40px;
+	width:40px;
+}
+
+/*responsive for cv page*/
+.cv{
+	margin-top:60px;
+	width:1150px;
+	height:1450px;
+	padding-left:140px;
+}
+.up{
+	width:1150px;
+}
+table .top{
+	height:90px;
+	font-size:50px;
+}
+.edu{
+	height:1125px;
+	width:700px;
+}
+table .middle{
+	font-size:35px;
+}
+table .history{
+	font-size:28px;
+}
+.pi{
+	width:450px;
+	height:1125px;
+
+}
+table .left-top{
+	height:254px;
+}
+table .cvpic{
+	width:160px;
+	height:220px;
+}
+table .pinfo{
+	font-size:35px;
+}
+table .details{
+	font-size:28px;
+}
+table .bottom{
+	font-size:30px;
+}  
 }
