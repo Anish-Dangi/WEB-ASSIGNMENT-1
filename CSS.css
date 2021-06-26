@@ -19,8 +19,8 @@ body{
 	animation-timing-function:ease-out;
 }
 @keyframes SI{
-	0%	{left:-1500px;}
-	100%	{left:0px;}
+	0%	{transform:translateX(-1500px);}
+	100%	{transform:translateX(0px);}
 }
 nav{
 	width:100%;
@@ -78,7 +78,7 @@ ul li a{
 	background:linear-gradient(135deg,#b7b1aa,#2f4353);
 	box-sizing:border-box;
 	border:4px solid black;
-	box-shadow:7px 7px;
+	box-shadow:6px 6px;
 	font-family:Bahnschrift;
 	font-size:29px;
 }
@@ -133,13 +133,17 @@ ul li a{
 	height:100%;
 	width:100%;
 	animation-name:pro;
-	animation-duration:1s;
+	animation-duration:6s;
 	animation-timing-function:ease-out;
 	transition:transform;
 }
 @keyframes pro{
-	0%	 {left:1500px;}
-	100%	{left:0px;}
+from{
+	opacity:0;
+}
+to{
+	opacity:1;
+}
 }
 .img:hover{
 	transform:scale(1.05);
@@ -197,9 +201,9 @@ footer{
 	margin-bottom:10px;
 }
 @keyframes foot{
-	0%	{left:-1500px;}
-	50%	{left:0px;}
-	100%	{left:1500px;}
+	0%	{transform:translateX(-1500px);}
+	50%	{transform:translateX(0px);}
+	100%	{transform:translatex(1500px);}
 }
 
 /*css for contact page */
@@ -239,28 +243,28 @@ form input{
 }
 form input[type=text]{
 	font-family:Arial;
-	font-size:23px;
+	font-size:21px;
 	width:300px;
 }
 form input[type=date]{
 	font-family:Arial;
-	font-size:23px;
+	font-size:21px;
 }
 form select{
 	font-family:Arial;
-	font-size:23px;
+	font-size:21px;
 	border:2px solid black;
 	color:#1f222d;
 }	
 form textarea{
 	font-family:Arial;
-	font-size:23px;
+	font-size:21px;
 	border:2px solid black;
 	height:200px;
 	width:590px;
 }
 form input[type=submit]{
-	width:314px;
+	width:323px;
 	font-family:Arial;
 	font-size:20px;
 	background:#3e3b3b;
@@ -270,7 +274,7 @@ form input[type=submit]{
 	cursor:pointer;
 }
 form input[type=reset]{
-	width:314px;
+	width:323px;
 	font-family:Arial;
 	font-size:20px;
 	background:#3e3b3b;
@@ -1207,7 +1211,7 @@ table .details{
 table .bottom{
 	height:50px;
 	font-size:22px;
-} 
+}
 
 }
 
@@ -1276,7 +1280,7 @@ ul li a{
 	font-size:22px;
 }
 .p{
-	width:97%;
+	width:98.5%;
 	height:100%;
 	border-bottom:3px solid black;
 }
@@ -1304,7 +1308,7 @@ ul li a{
 	flex-direction:column;
 	align-items:center;
 	width:100%;
-	height:100;
+	height:100%;
 	border:none;
 }
 .placeimg{
