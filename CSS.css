@@ -41,7 +41,7 @@ ul li a{
 	text-decoration:none;
 	margin:12px 55px;
 	font-size:28px;
-	font-family:Bahnschrift SemiBold;
+	font-family:Bahnschrift;
 }
 .active,ul li a:hover{
 	color:white;
@@ -73,7 +73,7 @@ ul li a{
 	/*for text gradient https://www.youtube.com/watch?v=OAMTLkZiyJM */
 }
 .info{
-	margin:10px 35px;
+	margin:25px 35px;
 	width:100%;
 	background:linear-gradient(135deg,#b7b1aa,#2f4353);
 	box-sizing:border-box;
@@ -388,6 +388,72 @@ table .bottom{
 table, tr, th, td{
 	border:1px solid black;
 }
+/*css for site-report*/
+.mainhead{
+	font-family:Bahnschrift;
+	font-size:36px;
+	text-align:center;
+	margin-top:20px;
+}
+.mainhead p{
+	font-family:Arial;
+	font-size:24px;
+	text-align:left;
+	margin:10px 30px;
+	color:#131010;
+}
+.site{
+	width:96%;
+	margin:25px;
+}
+.head{
+	font-family:Bahnschrift;
+	font-size:36px;
+	text-align:center;
+	background-color:#262b2de8;
+}
+.report{
+	font-family:Arial;
+	font-size:24px;
+	text-align:left;
+	color:#131010;
+	background-color:#90a1a9e8;
+}
+
+.report p{
+	margin:10px 30px;
+}
+.site, .topic, .procedure{
+	border:2px solid black;
+}
+.ss{
+	height:490px;
+	width:575px;
+	margin:10px 30px;
+}
+.ss:hover{
+	transform:scale(1.02);
+	box-shadow:3px 3px;
+}
+.validation{
+	font-family:Bahnschrift;
+	font-size:36px;
+	text-align:center;
+	margin-top:20px;
+}
+.validation p{
+	font-family:Arial;
+	font-size:24px;
+	text-align:center;
+	margin:10px 30px;
+	color:#c7c5d4;
+}
+.vid{
+	width:1050px;
+}
+
+
+
 
 /* for responsive*/
 
@@ -402,8 +468,8 @@ table, tr, th, td{
 .ham{
 	margin-top:5px;
 	margin-left:10px;
-	height:25px;
-	width:30px;
+	height:34px;
+	width:34px;
 	display:block;
 }
 
@@ -451,7 +517,7 @@ ul li a{
 	color:black;
 	text-decoration:none;
 	font-size:25px;
-	font-family:Bahnschrift SemiBold;
+	font-family:Bahnschrift;
 	
 }
 #icon:checked + ul{
@@ -677,8 +743,8 @@ table .bottom{
 .ham{
 	margin-top:5px;
 	margin-left:10px;
-	height:25px;
-	width:30px;
+	height:36px;
+	width:36px;
 	display:block;
 }
 
@@ -692,8 +758,8 @@ nav{
 	position:relative;
 	top:-36px;
 	left:65px;
-	height:40px;
-	width:40px;
+	height:42px;
+	width:42px;
 	margin-left:100px;
 	border-radius:50px;
 	opacity:0;
@@ -703,8 +769,8 @@ nav{
 	position:relative;
 	top:20px;
 	left:5px;
-	height:40px;
-	width:40px;
+	height:42px;
+	width:42px;
 	margin-left:100px;
 	border-radius:50px;
 }
@@ -725,7 +791,7 @@ ul li a{
 	color:black;
 	text-decoration:none;
 	font-size:26px;
-	font-family:Bahnschrift SemiBold;
+	font-family:Bahnschrift;
 	
 }
 #icon:checked + ul{
@@ -951,8 +1017,8 @@ table .bottom{
 .ham{
 	margin-top:5px;
 	margin-left:10px;
-	height:28px;
-	width:33px;
+	height:38px;
+	width:38px;
 	display:block;
 }
 
@@ -966,8 +1032,8 @@ nav{
 	position:relative;
 	top:-36px;
 	left:85px;
-	height:40px;
-	width:40px;
+	height:44px;
+	width:44px;
 	margin-left:100px;
 	border-radius:50px;
 	opacity:0;
@@ -977,8 +1043,8 @@ nav{
 	position:relative;
 	top:20px;
 	left:5px;
-	height:40px;
-	width:40px;
+	height:44px;
+	width:44px;
 	margin-left:100px;
 	border-radius:50px;
 }
@@ -999,7 +1065,7 @@ ul li a{
 	color:black;
 	text-decoration:none;
 	font-size:27px;
-	font-family:Bahnschrift SemiBold;
+	font-family:Bahnschrift;
 	
 }
 #icon:checked + ul{
